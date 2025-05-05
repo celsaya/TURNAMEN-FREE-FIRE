@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turnamen CLASH SQUAD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+    header {
+      background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1238840/ss_b6a12c99f7c88a1bbcc648fbcf4e1d0bda4d7fcf.1920x1080.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+      color: #FFD700;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      margin-top: -50px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+    .wa-button {
+      background-color: #25D366;
+      color: white;
+      margin-top: 20px;
+    }
+    .payment-box {
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+    .terms-page {
+      display: none;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .terms-page h2 {
+      color: #FFD700;
+      text-align: center;
+    }
+    .terms-page ul {
+      padding-left: 20px;
+    }
+    .terms-page li {
+      margin-bottom: 10px;
+    }
+    .back-button {
+      background-color: #302b63;
+      color: white;
+    }
+    .slot-counter {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 1.2rem;
+      color: #FFD700;
+    }
+    .registration-closed {
+      color: #ff4444;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    .success-message {
+      display: none;
+      text-align: center;
+      color: #4CAF50;
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    .prize-box {
+      background-color: rgba(255, 215, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border-left: 4px solid #FFD700;
+    }
+    .rules-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .highlight {
+      color: #FFD700;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TURNAMEN CLASH SQUAD</h1>
+    <p>OFFLINE TOURNAMENT | Slot Terbatas 16 Tim</p>
+  </header>
+
+  <div class="container">
+    <h2>Formulir Pendaftaran</h2>
+    <div class="slot-counter">Slot Tersedia: 16/16</div>
+    <form>
+      <label for="teamName">Nama Tim</label>
+      <input type="text" id="teamName" required>
+
+      <label for="leaderName">Nama Ketua Tim</label>
+      <input type="text" id="leaderName" required>
+
+      <label for="members">Anggota Tim (Max 4)</label>
+      <textarea id="members" rows="3" placeholder="Pisahkan dengan koma (Contoh: Player1, Player2, Player3)" required></textarea>
+
+      <label for="idLeader">ID Leader</label>
+      <input type="text" id="idLeader" placeholder="Contoh: 123456789" required>
+
+      <label for="waNumber">No WhatsApp</label>
+      <input type="tel" id="waNumber" placeholder="Contoh: 082212345678" required>
+
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+
+    <div class="payment-box">
+      <h3>Metode Pembayaran</h3>
+      <p>Biaya pendaftaran <strong class="highlight">Rp30.000</strong> per tim ke:</p>
+      <p><strong>WhatsApp:</strong> 082260493672<br>
+      <strong>Atas Nama:</strong> Orlando</p>
+    </div>
+
+    <div class="prize-box">
+      <h3>Hadiah Turnamen</h3>
+      <p><strong class="highlight">Juara 1:</strong> Rp250.000</p>
+      <p><strong class="highlight">Juara 2:</strong> Rp125.000</p>
+    </div>
+
+    <a href="https://wa.me/6282260493672" target="_blank">
+      <button class="wa-button">Hubungi Admin via WhatsApp</button>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Turnamen CLASH SQUAD - Diselenggarakan oleh Admin
+  </footer>
+</body>
+</html>
